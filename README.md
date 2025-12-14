@@ -1,6 +1,6 @@
-# 🚀 ECS Fargate Infrastructure using Terraform (AWS)
+#  ECS Fargate Infrastructure using Terraform (AWS)
 
-## 📌 Overview
+## Overview
 
 This project provisions a production-style container infrastructure on AWS using Terraform.  
 A Dockerized application runs on Amazon ECS (Fargate) inside private subnets and is exposed to the internet via an Application Load Balancer (ALB) deployed in public subnets.
@@ -12,7 +12,7 @@ The setup follows AWS and DevOps best practices:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 Internet  
 → Application Load Balancer (Public Subnets)  
@@ -22,7 +22,7 @@ Internet
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - AWS (VPC, ECS Fargate, ALB, NAT Gateway)
 - Terraform
@@ -31,7 +31,7 @@ Internet
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 terraform/
 ├── main.tf  
@@ -43,7 +43,7 @@ terraform/
 
 ---
 
-## ⚙️ Infrastructure Details
+## Infrastructure Details
 
 ### VPC
 - CIDR block: 10.0.0.0/16
@@ -65,7 +65,7 @@ terraform/
 
 ---
 
-## 🐳 Application
+## Application
 
 Docker Image:
 prasad0508/simpletimeservice:latest
@@ -75,7 +75,7 @@ Container Port:
 
 ---
 
-## 🚀 How to Deploy
+## How to Deploy
 
 ### Prerequisites
 - AWS CLI configured
@@ -90,7 +90,7 @@ Type `yes` when prompted.
 
 ---
 
-## 🌐 Access the Application
+## Access the Application
 
 After deployment, Terraform outputs the ALB DNS name.
 
@@ -103,7 +103,7 @@ http://ecs-demo-alb-xxxxxxxx.us-east-1.elb.amazonaws.com
 
 ---
 
-## 🧹 Cleanup
+## Cleanup
 
 To avoid AWS charges, destroy the infrastructure:
 
@@ -111,7 +111,7 @@ terraform destroy
 
 ---
 
-## 🔐 Security & Best Practices
+## Security & Best Practices
 
 - ECS tasks run in private subnets
 - No public IPs assigned to containers
@@ -121,7 +121,7 @@ terraform destroy
 
 ---
 
-## 📌 Author
+## Author
 
 Prasad sonawane  
 DevOps / Cloud Engineer
